@@ -5,24 +5,177 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <script src="https://kit.fontawesome.com/7eb69e95f6.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
-<script src="https://kit.fontawesome.com/7eb69e95f6.js" crossorigin="anonymous"></script>
+<body>
+<header>
+<nav class="container">
+    <div class="logo"><i class="fa-solid fa-car-on"></i></i>Level Up Luxury Car Rentals</div>
+    <ul>
+        <li><a href="#" class="selected">Home</a></li>
+        <li><a href="#">Luxury Cars</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#" class="highlight">Contact</a></li>
+    </ul>
+</nav>
 
-<div>
-    <section>
-        <i class="fa-solid fa-car-mirrors"></i>
-    </section>
-
+<div class="content">
+    <div class="container">
+        <h1>Luxury Car Rentals</h1>
+        <p>Contact us for the best service in Montreal</p>
+        <a class="highlight" href="#">Call us today!</a>
+    </div>
 </div>
 
 
-<body>
+</header>
 
+<footer>
+    <ul class="container">
+        <li><strong>Our Location</strong>
+            <p>104 Spooner St</p>
+        </li>
+        <li><strong>Phone</strong>
+            <p>000-000-0000</p>
+        </li>
+        <li><strong>Email</strong>
+            <p>Luxury@luxarycarrentals.com</p>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        font-family:  'Signika Negative', sans-serif;
+        margin: 0;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 1rem;
+        width: 1000px;
+    }
+
+    .content {
+        font-size: 1rem;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .content h1 {
+        color: silver;
+        margin-bottom: 0;
+    }
+
+    footer{
+        color: silver;
+        padding: 1rem;
+    }
+
+    footer strong {
+        color: red;
+    }
+
+
+
+    footer ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    footer li {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+
+    header {
+        align-items: flex-start;
+        background-image: url(https://hd-wallpaper.wiki/wp-content/uploads/2021/05/car-wallpaper-4k-scaled.jpg);
+        background-size: cover;
+        background-position: center center;
+        color: silver;
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 102px);
+    }
+
+
+
+    @media screen and (max-width: 700px) {
+        .content{
+            font-size: 1.4rem;
+            margin: 2rem auto 0;
+        }
+        nav ul {
+            flex-direction: column;
+            align-self: end;
+        }
+
+        nav li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        nav .highlight {
+            display: none;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        color: silver;
+        font-size: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+
+
+    nav li a {
+        color: silver;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .selected {
+        font-weight: bold;
+    }
+
+    .highlight {
+        background-color: red;
+        color: silver;
+        padding: 1rem;
+        text-decoration: none;
+
+    }
 
 </style>
